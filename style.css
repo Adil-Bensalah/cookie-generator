@@ -1,0 +1,341 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    font-family: Lato, sans-serif;
+    background: linear-gradient(to right, #ffefba, #ffffff); 
+    padding: clamp(20px, 5vw, 50px) 20px 10px;
+}
+
+.container{
+    position: absolute;
+    left: 35%;
+    text-align: center;
+}
+
+h1{
+ font-size: 45px;
+ font-weight: 300;
+ margin-bottom: 50px;
+}
+
+span{
+font-weight: 600;
+
+}
+
+input{
+    height: 40px;
+    width: 600px;
+    margin-bottom: 30px;
+    border: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+    margin-top: 10px;
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight:500;
+     }
+label{
+    position: absolute;
+    left: 0%;
+     font-size: 18px; 
+     font-weight: 700;
+}
+
+
+.creat{
+    margin-top: 30px;
+    width: 100px;
+    padding: 10px;
+    font-size: 18px ;
+    margin-right: 5px;
+    border-radius: 5px;
+    color: #f1f1f1;
+    background-color:#006C67 ;
+    border: none ;
+    cursor: pointer;
+}
+
+.displayButton{
+    margin-top: 30px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px ;
+    margin-left: 5px;
+    border-radius: 5px;
+    color: #f1f1f1;
+    background-color:#006C67 ;
+    border: none ;
+    cursor: pointer;
+}
+.creat:hover{
+    background-color:#006C99; 
+}
+
+.displayButton:hover{
+    background-color:#006C99; 
+}
+
+.result{
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    font-weight: 400;
+    display: none;
+
+   
+}
+
+.info-txt{
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    color:#8B0000 ;
+    font-weight: 700;
+left: 25%;
+   
+ 
+} 
+.cookies-list{
+    font-size: 40px;
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 5px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    grid-gap:20px ;
+}
+
+.cookies-list li {
+ font-size: 18px;
+ padding: 10px;
+ border-radius: 5px;
+ background: #fff;
+ position: relative;
+ box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+ 
+}
+.cookies-list li p{
+    margin: 10px 0;
+}
+.cookies-list li span{
+    font-weight: 600;
+}
+
+.cookies-list li button{
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    background: crimson;
+    color: #f1f1f1;
+    
+
+}
+
+.parent-toast{
+    border: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    position: absolute;
+    width: auto;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.toast{
+    width: auto;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    padding: 10px;
+
+}
+
+
+
+    /* @media (max-width:1400px ){
+    .container{
+       position: absolute;
+       left: 28%;
+    }
+
+    }
+
+    @media (max-width:1200px ){
+        .container{
+           position: absolute;
+           left: 25%;
+        }
+    
+        }
+        @media (max-width:1100px ){
+            .container{
+               position: absolute;
+               left: 22%;
+            }
+        
+            }
+            @media (max-width:1000px ){
+                .container{
+                   position: absolute;
+                   left: 15%;
+                }
+            
+                }
+
+                @media (max-width:850px ){
+                    .container{
+                       position: absolute;
+                       left: 20%;
+                    }
+                input{
+                    width: 400px;
+                }
+                label{
+                    position: absolute;
+                    left: 7%;
+                }
+                    }
+
+                    @media (max-width:850px ){
+                        .container{
+                           position: absolute;
+                           left: 17%;
+                        }
+                    input{
+                        width: 400px;
+                    }
+                    label{
+                        position: absolute;
+                        left: 7%;
+                    }
+                        }
+
+                        @media (max-width:670px ){
+                            .container{
+                               position: absolute;
+                               left: 14%;
+                            }
+                        input{
+                            width: 400px;
+                        }
+                        label{
+                            position: absolute;
+                            left: 7%;
+                        }
+                        h1{
+                            font-size: 30px;
+                        }
+                            }
+                            
+                            @media (max-width:630px ){
+                                .container{
+                                   position: absolute;
+                                   left: 11%;
+                                }
+                            input{
+                                width: 400px;
+                            }
+                            label{
+                                position: absolute;
+                                left: 7%;
+                            }
+                            h1{
+                                font-size: 30px;
+                            }
+
+                            
+                                }
+
+
+                                @media (max-width:630px ){
+                                    .container{
+                                       position: absolute;
+                                       left: 19%;
+                                    }
+                                input{
+                                    width: 350px;
+                                }
+                                label{
+                                    position: absolute;
+                                    left: 7%;
+                                }
+                                h1{
+                                    font-size: 30px;
+                                }
+    
+                                
+                                    }
+
+                                    
+                                @media (max-width:540px ){
+                                    .container{
+                                       position: absolute;
+                                       left: 19%;
+                                    }
+                                input{
+                                    width: 350px;
+                                }
+                                label{
+                                    position: absolute;
+                                    left: 7%;
+                                }
+                                h1{
+                                    font-size: 30px;
+                                }
+    
+                                
+                                    }
+
+                                    @media (max-width:490px ){
+                                        .container{
+                                           position: absolute;
+                                           left: 20%;
+                                        }
+                                    input{
+                                        width: 250px;
+                                    }
+                                    label{
+                                        position: absolute;
+                                        left: 7%;
+                                    }
+                                    h1{
+                                        font-size: 20px;
+                                    }
+        
+                                    
+                                        }
+                                        
+                                    @media (max-width:330px ){
+                                        .container{
+                                           position: absolute;
+                                           left: 10%;
+                                        }
+                                    input{
+                                        width: 250px;
+                                    }
+                                    label{
+                                        position: absolute;
+                                        left: 7%;
+                                    }
+                                    h1{
+                                        font-size: 20px;
+                                    }
+        
+                                    
+                                        } */
